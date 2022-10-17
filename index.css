@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: auto;
+  font-family: "Fira Code", Consolas, "Courier New", "monospace";
+}
+
+body {
+  background: #1f212a;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap");
+
+#wrapper {
+  width: 1200px;
+  margin-top: 20px;
+}
+
+ol {
+  width: fit-content;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+ol li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+ol li a {
+  color: #bbc6c6;
+  text-decoration: underline;
+  text-decoration-color: #bbc6c600;
+  transition: 0.1s;
+}
+
+a {
+  cursor: pointer;
+  user-select: none;
+}
+
+ol li a:hover {
+  text-decoration-color: #bbc6c6ff;
+}
+
+.sub {
+  font-size: 15px;
+  color: #c20303;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bolder;
+  color: #bbc6c6;
+}
+
+.sub_title {
+  font-size: 27px;
+  color: #7d8282;
+  font-weight: bolder;
+  letter-spacing: -1px;
+}
+
+#name_container {
+  position: relative;
+}
+
+#name,
+#shadow {
+  background: url("./background.jpg");
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 12%;
+  color: transparent;
+  font-family: "Fira Mono", monospace;
+  font-weight: bolder;
+  font-size: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+#shadow {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  text-shadow: 0 0 7px rgba(130, 0, 0, 0.6);
+  z-index: 0;
+}
