@@ -15,6 +15,9 @@ body {
   /* smartphones, iPhone, portrait 480x320 phones */
 }
 @media (min-device-width: 481px) {
+  body {
+    background: green;
+  }
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-device-width: 641px) {
