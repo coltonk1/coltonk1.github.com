@@ -11,9 +11,27 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap");
 
-#wrapper {
-  width: 1200px;
-  margin-top: 20px;
+@media (min-device-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-device-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-device-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-device-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-device-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-device-width: 1281px) {
+  /* hi-res laptops and desktops */
+  #wrapper {
+    width: 1200px;
+    margin-top: 20px;
+  }
 }
 
 ol {
