@@ -12,99 +12,190 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap");
 
 @media (min-device-width: 320px) {
+  ol {
+    width: fit-content;
+    margin-left: 0;
+    margin-top: 0.5em;
+  }
+
+  ol li {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  ol li a {
+    color: #bbc6c6;
+    text-decoration: underline;
+    text-decoration-color: #bbc6c600;
+    transition: 0.1s;
+  }
+
+  a {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  ol li a:hover {
+    text-decoration-color: #bbc6c6ff;
+  }
+
+  .sub {
+    font-size: 0.7em;
+    color: #c20303;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #bbc6c6;
+    text-align: center;
+  }
+
+  .sub_title {
+    font-size: 0.75em;
+    color: #7d8282;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  #name_container {
+    position: relative;
+  }
+
+  #name,
+  #shadow {
+    background: url("./background.jpg");
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 12%;
+    color: transparent;
+    font-family: "Fira Mono", monospace;
+    font-weight: bolder;
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  #shadow {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    text-shadow: 0 0 7px rgba(130, 0, 0, 0.6);
+    z-index: 0;
+    left: 0;
+    right: 0;
+  }
   /* smartphones, iPhone, portrait 480x320 phones */
 }
 @media (min-device-width: 481px) {
-  body {
-    background: green;
+  #wrapper {
+    width: 320px;
+    margin-top: 10px;
   }
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-device-width: 641px) {
+  #wrapper {
+    width: 481px;
+    margin-top: 10px;
+  }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 @media (min-device-width: 961px) {
+  #wrapper {
+    width: 641px;
+    margin-top: 10px;
+  }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-device-width: 1025px) {
+  #wrapper {
+    width: 961px;
+    margin-top: 10px;
+  }
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-device-width: 1281px) {
   /* hi-res laptops and desktops */
   #wrapper {
-    width: 1200px;
+    width: 1025px;
     margin-top: 20px;
   }
-}
 
-ol {
-  width: fit-content;
-  margin-right: 20px;
-  margin-top: 10px;
-}
+  ol {
+    width: fit-content;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
 
-ol li {
-  display: inline-block;
-  margin-left: 25px;
-}
+  ol li {
+    display: inline-block;
+    margin-left: 25px;
+  }
 
-ol li a {
-  color: #bbc6c6;
-  text-decoration: underline;
-  text-decoration-color: #bbc6c600;
-  transition: 0.1s;
-}
+  ol li a {
+    color: #bbc6c6;
+    text-decoration: underline;
+    text-decoration-color: #bbc6c600;
+    transition: 0.1s;
+  }
 
-a {
-  cursor: pointer;
-  user-select: none;
-}
+  a {
+    cursor: pointer;
+    user-select: none;
+  }
 
-ol li a:hover {
-  text-decoration-color: #bbc6c6ff;
-}
+  ol li a:hover {
+    text-decoration-color: #bbc6c6ff;
+  }
 
-.sub {
-  font-size: 15px;
-  color: #c20303;
-}
+  .sub {
+    font-size: 15px;
+    color: #c20303;
+  }
 
-.title {
-  font-size: 35px;
-  font-weight: bolder;
-  color: #bbc6c6;
-}
+  .title {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #bbc6c6;
+  }
 
-.sub_title {
-  font-size: 27px;
-  color: #7d8282;
-  font-weight: bolder;
-  letter-spacing: -1px;
-}
+  .sub_title {
+    font-size: 27px;
+    color: #7d8282;
+    font-weight: bolder;
+    letter-spacing: -1px;
+  }
 
-#name_container {
-  position: relative;
-}
+  #name_container {
+    position: relative;
+  }
 
-#name,
-#shadow {
-  background: url("./background.jpg");
-  background-repeat: repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: 12%;
-  color: transparent;
-  font-family: "Fira Mono", monospace;
-  font-weight: bolder;
-  font-size: 40px;
-  position: relative;
-  z-index: 1;
-}
+  #name,
+  #shadow {
+    background: url("./background.jpg");
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 12%;
+    color: transparent;
+    font-family: "Fira Mono", monospace;
+    font-weight: bolder;
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+  }
 
-#shadow {
-  background: transparent;
-  position: absolute;
-  top: 0;
-  text-shadow: 0 0 7px rgba(130, 0, 0, 0.6);
-  z-index: 0;
+  #shadow {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    text-shadow: 0 0 7px rgba(130, 0, 0, 0.6);
+    z-index: 0;
+  }
 }
