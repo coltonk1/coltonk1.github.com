@@ -19,3 +19,22 @@ var create_name = setInterval(function(){
         clearInterval(create_name);
 }, 85)
 
+
+var open = false;
+document.getElementById("open_button").onclick = function(){
+    if(!open){
+        document.getElementById("open").style.width = "125vh";
+        document.getElementById("open").style.height = "125vh";
+        document.getElementById("open").style.borderRadius = "0 0 100% 0";
+        document.getElementById("open").style.transition = "width 2s, height 2s, border-radius .5s";
+    }
+    else{
+        document.getElementById("open").style.width = "1em";
+        document.getElementById("open").style.height = "1em";
+        document.getElementById("open").style.borderRadius = "0 0 .5em 0";
+        document.getElementById("open").style.transition = "width 1s, height 1s, border-radius 2s";
+    }
+
+    open = !open;
+}
+

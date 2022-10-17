@@ -15,19 +15,31 @@ body {
   ol {
     width: fit-content;
     margin-left: 0;
-    margin-top: 0.5em;
+    width: 100%;
   }
 
   ol li {
     margin-left: 0.5em;
     margin-bottom: 0.5em;
+    margin-top: 5em;
+  }
+
+  #open_content {
+    position: absolute;
+    left: 0;
+    width: 99vw;
   }
 
   ol li a {
+    position: relative;
     color: #bbc6c6;
     text-decoration: underline;
     text-decoration-color: #bbc6c600;
     transition: 0.1s;
+    height: fit-content;
+    pointer-events: all;
+    text-align: center;
+    display: block;
   }
 
   a {
@@ -70,7 +82,7 @@ body {
     background-repeat: repeat;
     background-clip: text;
     -webkit-background-clip: text;
-    background-size: 12%;
+    background-size: 15%;
     color: transparent;
     font-family: "Fira Mono", monospace;
     font-weight: bolder;
@@ -81,13 +93,34 @@ body {
   }
 
   #shadow {
-    background: transparent;
     position: absolute;
     top: 0;
     text-shadow: 0 0 7px rgba(130, 0, 0, 0.6);
     z-index: 0;
     left: 0;
     right: 0;
+  }
+
+  #open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #333644, #663030);
+    width: 1em;
+    height: 1em;
+    pointer-events: none;
+    border-radius: 0 0 0.5em 0;
+    transition: width 2s, height 2s, border-radius 2s;
+  }
+  #open_button {
+    cursor: pointer;
+    color: transparent;
+    text-align: center;
+    line-height: 1em;
+    pointer-events: all;
+    z-index: 3;
   }
   /* smartphones, iPhone, portrait 480x320 phones */
 }
