@@ -27,12 +27,14 @@ document.getElementById("open_button").onclick = function(){
         document.getElementById("open").style.height = "125vh";
         document.getElementById("open").style.borderRadius = "0 0 100% 0";
         document.getElementById("open").style.transition = "width 2s, height 2s, border-radius .5s";
+        document.getElementById("open_button").textContent = "x";
     }
     else{
-        document.getElementById("open").style.width = "1em";
-        document.getElementById("open").style.height = "1em";
+        document.getElementById("open").style.width = "1.5em";
+        document.getElementById("open").style.height = "1.5em";
         document.getElementById("open").style.borderRadius = "0 0 .5em 0";
         document.getElementById("open").style.transition = "width 1s, height 1s, border-radius 2s";
+        document.getElementById("open_button").textContent = "=";
     }
 
     open = !open;
