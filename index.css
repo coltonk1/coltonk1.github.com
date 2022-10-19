@@ -5,7 +5,11 @@
 }
 
 body {
-  background: #1f212a;
+  background-color: #1f212a;
+  background-image: url("leaf.png"), url("leaf4.png");
+  background-position: 101% 5%, 0 40%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 2em, 3em;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
@@ -61,7 +65,7 @@ body {
 
   .sub {
     font-size: 0.7em;
-    color: #c20303;
+    color: #128376;
     text-align: center;
     font-weight: bold;
   }
@@ -112,7 +116,7 @@ body {
   #shadow {
     position: absolute;
     top: 0;
-    text-shadow: 0 0 7px #82000099;
+    text-shadow: 0 0 5px #06504799;
     z-index: 0;
     left: 0;
     right: 0;
@@ -124,7 +128,7 @@ body {
     left: 0;
     z-index: 2;
     overflow: hidden;
-    background: linear-gradient(to bottom right, #333644, #663030);
+    background: linear-gradient(to bottom right, #1f2d2b, #137569);
     width: 1.5em;
     height: 1.5em;
     pointer-events: none;
@@ -155,7 +159,7 @@ body {
 
   .project_title {
     font-size: 1.2em;
-    color: #820000;
+    color: #128376;
     font-weight: bolder;
     font-family: "Fira Mono", monospace;
   }
@@ -176,7 +180,7 @@ body {
   .link {
     font-size: 0.7em;
     font-weight: bolder;
-    color: #820000;
+    color: #128376;
     text-align: center;
   }
   /* smartphones, iPhone, portrait 480x320 phones */
