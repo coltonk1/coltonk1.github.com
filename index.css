@@ -7,10 +7,11 @@
 body {
   background-color: #1f212a;
   background-image: url("leaf3.png"), url("leaf4.png"), url("leaf.png"),
-    url("leaf2.png"), url("leaf5.png"), url("leaf6.png");
-  background-position: 101% 5%, 0 20%, 101% 20%, 0 94%, 101% 70%, 0 70%;
+    url("leaf2.png"), url("leaf5.png"), url("leaf6.png"), url("arch.png");
+  background-position: 101% 25%, 0 20%, 101% 20%, 0 94%, 101% 70%, 0 70%,
+    99% 19%;
   background-repeat: no-repeat;
-  background-size: 2em, 3em, 0, 3em, 10em, 10em;
+  background-size: 2em, 3em, 0, 3em, 10em, 10em, 6em;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
