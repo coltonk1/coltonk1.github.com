@@ -7,7 +7,10 @@ document.getElementById("wrapper").onclick = function(){
     document.getElementById("clicked").style.opacity = "100%";
     document.getElementById("heart").style.opacity = "100%";
 
-    text = "I love you."
+
+    different_texts = ["I love you.", "You are the sweetest", "You are amazing", "Ugh you're so perfect", "I love your hair <3",
+    "I am so glad we are dating.", "I miss you :(", "I love you so much", "You are smokin", "Hey gorgeous <3", "Most beautifulest girl in the whole wide world"];
+    text = different_texts[Math.floor(Math.random()*different_texts.length)]
     interval = 0;
     setTimeout(function(){
         write = setInterval(function(){
