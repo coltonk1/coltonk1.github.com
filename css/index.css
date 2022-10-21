@@ -163,21 +163,24 @@ body {
   }
 
   .project_title {
+    font-style: italic;
     font-size: 1.2em;
     color: #128376;
-    font-weight: bolder;
+    font-weight: bold;
     font-family: "Fira Mono", monospace;
   }
   .project_description {
     color: #98a0a0;
-    font-weight: bold;
+    text-align: justify;
     font-size: 0.7em;
     padding: 0 2em;
   }
   .project_link {
-    font-size: 0.7em;
+    font-size: inherit;
     font-weight: bolder;
     color: #696e82;
+    width: fit-content;
+    margin-left: 0;
   }
   .project {
     margin-top: 1em;
