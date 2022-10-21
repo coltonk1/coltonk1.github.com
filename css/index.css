@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap");
+
 * {
   padding: 0;
   margin: auto;
-  font-family: "Fira Code", Consolas, "Courier New", "monospace";
+  font-family: "Fira Mono";
 }
 
 body {
@@ -15,9 +18,6 @@ body {
   background-repeat: no-repeat;
   background-size: 2em, 3em, 0, 3em, 10em, 10em, 6em;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap");
 
 @media (min-device-width: 320px) {
   ol {
