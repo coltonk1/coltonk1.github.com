@@ -1,9 +1,9 @@
 
 //Get element
 const _name = document.getElementById("name");
-_name.textContent = "";
+_name.textContent = " ";
 const _shadow = document.getElementById('shadow');
-_shadow.textContent = "";
+_shadow.textContent = " ";
 
 //Set my visible name
 const myName = "Colton Karaffa";
