@@ -83,7 +83,7 @@ body {
   }
 
   .title {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bolder;
     color: #bbc6c6;
     text-align: center;
@@ -164,7 +164,7 @@ body {
 
   .project_title {
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #128376;
     font-weight: bold;
     font-family: "Fira Mono", monospace;
