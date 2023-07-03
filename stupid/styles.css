@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: auto;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+body {
+  background: #101015;
+}
+
+img {
+  position: absolute;
+  width: 75vw;
+  display: none;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+
+#overlay_text {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 0;
+  font-size: 10vw;
+  display: none;
+}
+
+#main_text {
+  color: grey;
+  font-size: 5vw;
+  font-weight: 500;
+  padding: 10px;
+}
